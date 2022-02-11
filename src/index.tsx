@@ -5,8 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // GLOBAL STYLES
-// import "@assets/scss/app.scss";
-import "./assets/scss/app.scss";
+import '@/assets/scss/app.scss';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +13,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 
 const isProd = process.env.NODE_ENV === 'production';
 !isProd && reportWebVitals(console.log);
