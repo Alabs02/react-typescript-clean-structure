@@ -1,7 +1,106 @@
 .btn {
+  border: none;
+  outline: none;
+  border-radius: toRem(2);
+  padding: toRem(12) toRem(14) !important;
+
+  font-size: toRem(16);
+  font-weight: 500;
+  color: $color-white;
+  letter-spacing: 0.1pt;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+
+  transition: all 0.4s ease-in-out;
+  @include boxShadow(default, #000);
+
+  &:focus {
+    outline: none;
+    border: none;
+    @include boxShadow(md, #000);
+  }
+
+  &:hover {
+    outline: none;
+    border: none;
+    @include boxShadow(md, #000);
+  }
+
+  &-thin {
+    font-weight: 300;
+  }
+
+  &-flat {
+    box-shadow: none !important;
+
+    &:hover {
+      box-shadow: none !important;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  &-sm {
+    font-size: toRem(14);
+    padding: toRem(8) toRem(12) !important;
+  }
+
+  &-lg {
+    font-size: toRem(18);
+    padding: toRem(12) toRem(43) !important;
+  }
+
   &-primary {
-    background-color: $brand-primary;
-    color: #fff;
-    border-radius: 20px;
+    @include btnColor($brand-primary, $color-white, 5);
+
+    &-light {
+      @include btnColor($brand-primary-light, $brand-primary, 5);
+    }
+
+    &-inverse {
+      @include btnColor($brand-primary-inverse, $brand-primary, 5);
+    }
+  }
+
+  &-secondary {
+    @include btnColor($brand-secondary, $color-white, 5);
+
+    &-light {
+      @include btnColor($brand-secondary-light, $color-text, 5);
+    }
+  }
+
+  &-tonic {
+    @include btnColor($brand-tonic, $color-white, 5);
+
+    &-light {
+      @include btnColor($brand-tonic-light, $brand-tonic, 5);
+    }
+
+    &-lighter {
+      @include btnColor($brand-tonic-lighter, $brand-tonic, 5);
+    }
+
+    &-inverse {
+      @include btnColor($brand-tonic-inverse, $color-white, 5);
+    }
+  }
+
+  &-success {
+    @include btnColor($brand-success, $color-white, 5);
+
+    &-light {
+      @include btnColor($brand-success-light, $brand-success-darker, 5);
+    }
+
+    &-dark {
+      @include btnColor($brand-success-dark, $color-white, 5);
+    }
+
+    &-darker {
+      @include btnColor($brand-success-darker, $color-white, 5);
+    }
   }
 }

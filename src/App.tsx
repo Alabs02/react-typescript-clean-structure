@@ -9,7 +9,10 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <div className="m-2">
-          <button className="btn btn-primary">Hello</button>
+          <button className="btn btn-primary">Hello World</button>
+          <button className="btn btn-tonic btn-thin">Hello World</button>
+          <button className="btn btn-success btn-flat">Hello World</button>
+          <button className="btn btn-secondary">Hello World</button>
         </div>
         <a
           className="App-link"

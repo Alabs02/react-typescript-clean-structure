@@ -1,0 +1,182 @@
+.hidden {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subpixel-antialiased {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+.fw {
+  &-light {
+    font-weight: 300;
+    @extend .subpixel-antialiased;
+  }
+
+  &-normal {
+    font-weight: 400;
+    @extend .subpixel-antialiased;
+  }
+
+  &-medium {
+    font-weight: 500;
+    @extend .subpixel-antialiased;
+  }
+
+  &-semi-bold {
+    font-weight: 600;
+    @extend .subpixel-antialiased;
+  }
+
+  &-bold {
+    font-weight: 700;
+    @extend .subpixel-antialiased;
+  }
+
+  &-bolder {
+    font-weight: 800;
+    @extend .subpixel-antialiased;
+  }
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.h {
+  &-full {
+    height: 100%;
+  }
+
+  &-auto {
+    height: auto;
+  }
+
+  &-screen {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+
+.w {
+  &-full {
+    width: 100%;
+  }
+
+  &-screen {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+.min {
+  &-h-full {
+    min-height: 100%;
+  }
+
+  &-w-full {
+    min-width: 100%;
+  }
+}
+
+.max {
+  &-h-full {
+    max-height: 100%;
+  }
+
+  &-w-full {
+    max-width: 100%;
+  }
+}
+
+$size: 100;
+@for $n from 0 through $size {
+  .ps {
+    &-#{$n} {
+      padding: toRem($n);
+    }
+
+    &t-#{$n} {
+      padding-top: toRem($n);
+    }
+
+    &r-#{$n} {
+      padding-right: toRem($n);
+    }
+
+    &l-#{$n} {
+      padding-left: toRem($n);
+    }
+
+    &b-#{$n} {
+      padding-bottom: toRem($n);
+    }
+
+    &x-#{$n} {
+      padding-left: toRem($n);
+      padding-right: toRem($n);
+    }
+
+    &y-#{$n} {
+      padding-top: toRem($n);
+      padding-bottom: toRem($n);
+    }
+  }
+
+  .ms {
+    &-#{$n} {
+      margin: toRem($n);
+    }
+
+    &t-#{$n} {
+      margin-top: toRem($n);
+    }
+
+    &r-#{$n} {
+      margin-right: toRem($n);
+    }
+
+    &l-#{$n} {
+      margin-left: toRem($n);
+    }
+
+    &b-#{$n} {
+      margin-bottom: toRem($n);
+    }
+
+    &x-#{$n} {
+      margin-left: toRem($n);
+      margin-right: toRem($n);
+    }
+
+    &y-#{$n} {
+      margin-top: toRem($n);
+      margin-bottom: toRem($n);
+    }
+  }
+
+  .gap {
+    &-#{$n} {
+      gap: toRem($n);
+    }
+
+    &-x-#{$n} {
+      column-gap: toRem($n);
+    }
+
+    &-y-#{$n} {
+      row-gap: toRem($n);
+    }
+  }
+}
