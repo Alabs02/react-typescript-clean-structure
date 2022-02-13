@@ -1,0 +1,35 @@
+.appbar {
+  background: $brand-white;
+
+  height: toRem(70);
+  width: 100%;
+  padding: toRem(16) toRem(48);
+
+  overflow: hidden;
+
+  display: none;
+
+  &-brand {
+    width: toRem(65);
+    height: toRem(35);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include breakpoint-up(md) {
+  .appbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

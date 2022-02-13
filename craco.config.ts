@@ -1,5 +1,6 @@
 import path from "path";
 import fs from "fs";
+const sassResourcesLoader = require('craco-sass-resources-loader');
 
 // APP DIRECTORY
 const appDirectory = fs.realpathSync(process.cwd());
@@ -11,9 +12,10 @@ const resolveAppPath = (relativePath: string) => path.resolve(appDirectory, rela
 const host = process.env.HOST || "localhost";
 
 module.exports = {
+  mode: "develpoment",
   webpack: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': resolveAppPath('src'),
       '@layouts': path.resolve(__dirname, 'src/layouts'),
       '@services': path.resolve(__dirname, 'src/services'),
       '@utils': path.resolve(__dirname, 'src/utils'),
@@ -77,5 +79,19 @@ module.exports = {
         }
       ],
     },
-  }
+  },
+  plugins: [
+    {
+      plugin: sassResourcesLoader,
+      options: {
+        resources: [
+          './src/assets/scss/_colors.scss',
+          './src/assets/scss/_utilities.scss',
+          './src/assets/scss/_mixins.scss',
+          './src/assets/scss/_breakpoints.scss'
+        ],
+      },
+    }
+  ],
 }
+

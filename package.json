@@ -13,6 +13,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.49.7",
     "web-vitals": "^2.1.4"
@@ -65,6 +66,7 @@
     "@types/storybook__react": "^5.2.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.3",
+    "craco-sass-resources-loader": "^1.1.0",
     "css-loader": "^6.6.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
