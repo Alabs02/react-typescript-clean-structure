@@ -1,0 +1,33 @@
+.app-drawer {
+  background: $brand-white;
+
+  &__item {
+    width: 100%;
+    height: toRem(48);
+    background: inherit;
+    color: inherit;
+
+    &:hover {
+      color: darken($color: $brand-tonic, $amount: 2);
+      background: $brand-tonic-light;
+    }
+  }
+
+  &__item--active {
+    background: $brand-tonic;
+    color: $color-white;
+  }
+
+  &__item--inactive {
+    background: $brand-white;
+    color: $color-text;
+  }
+}
+
+.test {
+  color: $brand-primary;
+
+  &--active {
+    color: $brand-tonic;
+  }
+}

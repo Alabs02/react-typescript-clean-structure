@@ -116,83 +116,113 @@
   }
 }
 
+.google {
+  &-red {
+    color: $google-red !important;
+  }
+
+  &-blue {
+    color: $google-blue !important;
+  }
+
+  &-green {
+    color: $google-green !important;
+  }
+
+  &-yellow {
+    color: $google-yellow !important;
+  }
+
+  &-spacing {
+    letter-spacing: 0pt;
+  }
+}
+
 $size: 100;
 @for $n from 0 through $size {
+  .ft-#{$n} {
+    font-size: toRem($n) !important;
+  }
+
+  .lh-#{$n} {
+    line-height: toRem($n) !important;
+  }
+
   .ps {
     &-#{$n} {
-      padding: toRem($n);
+      padding: toRem($n) !important;
     }
 
     &t-#{$n} {
-      padding-top: toRem($n);
+      padding-top: toRem($n) !important;
     }
 
     &r-#{$n} {
-      padding-right: toRem($n);
+      padding-right: toRem($n) !important;
     }
 
     &l-#{$n} {
-      padding-left: toRem($n);
+      padding-left: toRem($n) !important;
     }
 
     &b-#{$n} {
-      padding-bottom: toRem($n);
+      padding-bottom: toRem($n) !important;
     }
 
     &x-#{$n} {
-      padding-left: toRem($n);
-      padding-right: toRem($n);
+      padding-left: toRem($n) !important;
+      padding-right: toRem($n) !important;
     }
 
     &y-#{$n} {
-      padding-top: toRem($n);
-      padding-bottom: toRem($n);
+      padding-top: toRem($n) !important;
+      padding-bottom: toRem($n) !important;
     }
   }
 
   .ms {
     &-#{$n} {
-      margin: toRem($n);
+      margin: toRem($n) !important;
     }
 
     &t-#{$n} {
-      margin-top: toRem($n);
+      margin-top: toRem($n) !important;
     }
 
     &r-#{$n} {
-      margin-right: toRem($n);
+      margin-right: toRem($n) !important;
     }
 
     &l-#{$n} {
-      margin-left: toRem($n);
+      margin-left: toRem($n) !important;
     }
 
     &b-#{$n} {
-      margin-bottom: toRem($n);
+      margin-bottom: toRem($n) !important;
     }
 
     &x-#{$n} {
-      margin-left: toRem($n);
-      margin-right: toRem($n);
+      margin-left: toRem($n) !important;
+      margin-right: toRem($n) !important;
     }
 
     &y-#{$n} {
-      margin-top: toRem($n);
-      margin-bottom: toRem($n);
+      margin-top: toRem($n) !important;
+      margin-bottom: toRem($n) !important;
     }
   }
 
   .gap {
     &-#{$n} {
-      gap: toRem($n);
+      gap: toRem($n) !important;
     }
 
     &-x-#{$n} {
-      column-gap: toRem($n);
+      column-gap: toRem($n) !important;
     }
 
     &-y-#{$n} {
-      row-gap: toRem($n);
+      row-gap: toRem($n) !important;
     }
   }
 }

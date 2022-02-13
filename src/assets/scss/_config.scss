@@ -3,6 +3,8 @@
   box-sizing: border-box;
   text-decoration: none;
   white-space: normal;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 html,
@@ -12,6 +14,7 @@ body {
   @include bg;
   color: $color-text;
   scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 button {
@@ -24,7 +27,13 @@ button {
 ul,
 ol {
   margin: 0;
+  padding: 0;
   list-style-type: none;
+  list-style: none;
+
+  li {
+    margin: 0;
+  }
 }
 
 a {
