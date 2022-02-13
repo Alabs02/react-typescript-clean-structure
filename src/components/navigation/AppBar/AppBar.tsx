@@ -7,7 +7,7 @@ const AppBar: FC = () => {
     <Fragment>
       <div className="appbar">
         <div className="appbar-brand">
-          <img src="/static/logo.svg" alt="" />
+          <img src="/static/logo.svg" alt="brand-logo" />
         </div>
 
         <div className="appbar-navigation">

@@ -78,6 +78,22 @@
     width: 100vw;
     overflow-x: hidden;
   }
+
+  @media only screen and (min-width: 576px) {
+    .w-sm-full {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .w-md-full {
+      width: 100%;
+    }
+
+    .w-md-auto {
+      width: auto;
+    }
+  }
 }
 
 .min {

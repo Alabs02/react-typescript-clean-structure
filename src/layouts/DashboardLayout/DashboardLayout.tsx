@@ -4,6 +4,8 @@ import { Outlet } from "react-router-dom";
 // COMPONENTS
 import {
   AppBar,
+  MiniAppBar,
+  AppFooter,
 } from "../../components/navigation";
 
 const DashboardLayout: FC = () => {
@@ -11,8 +13,12 @@ const DashboardLayout: FC = () => {
     <Fragment>
       <div>
         <AppBar />
-          <Outlet />
-        <h3>AppFooter</h3>
+          <div className="psx-20 w-full h-full">
+            <MiniAppBar />
+            <Outlet />
+            <h3>AppFooter</h3>
+          </div>
+        <AppFooter />
       </div>
     </Fragment>
   );

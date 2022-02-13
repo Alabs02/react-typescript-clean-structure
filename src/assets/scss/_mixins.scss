@@ -38,10 +38,12 @@
   color: $textColor;
 
   &:hover {
+    color: $textColor;
     background-color: darken($color: $bgColor, $amount: $amount);
   }
 
   &:focus {
+    color: $textColor;
     background-color: darken($color: $bgColor, $amount: $amount);
   }
 }
