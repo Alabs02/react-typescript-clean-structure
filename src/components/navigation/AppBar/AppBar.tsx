@@ -19,10 +19,10 @@ const AppBar: FC = () => {
           </button>
 
           <button className="dropdown-btn">
-            <div className="dropdown-btn__avatar fw-semi-bold msr-8">
+            <div className="dropdown-btn__avatar fw-medium msr-8">
               TA
             </div>
-            <div className="fw-medium dropdown-btn__copy msr-12">Hello, <span className="fw-bold">Tobiloba</span></div>
+            <div className="fw-medium dropdown-btn__copy msr-12">Hello, <span className="fw-semi-bold">Tobiloba</span></div>
             <IoChevronDown />
           </button>
         </div>

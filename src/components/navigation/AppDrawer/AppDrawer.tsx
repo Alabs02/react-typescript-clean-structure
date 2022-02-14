@@ -22,7 +22,7 @@ const AppDrawer = ({ routes }: Iprops) => {
               <NavLink key={index} to={route.to} className={({ isActive }) => isActive ? "app-drawer__item--active" : "app-drawer__item--inactive"}>
                 <li className="app-drawer__item w-full psy-12 psx-24 d-flex place-items-center">
                   <route.icon className="msr-16" fontSize={20} />
-                  <span className="fw-medium ft-16 lh-24">{route.title}</span>
+                  <span className="fw-semi-bold ft-15 lh-24">{route.title}</span>
                 </li>
               </NavLink>
             </div>

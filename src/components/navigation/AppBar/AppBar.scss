@@ -57,12 +57,12 @@
 @include breakpoint-up(md) {
   .text-btn {
     &-title {
-      font-size: toRem(16);
+      font-size: toRem(15);
       font-weight: 400;
     }
   }
 
   .dropdown-btn {
-    font-size: toRem(18.4);
+    font-size: toRem(16);
   }
 }
