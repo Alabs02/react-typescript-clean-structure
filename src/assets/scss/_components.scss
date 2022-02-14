@@ -9,6 +9,11 @@
 
   display: none;
 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
   &-brand {
     width: toRem(65);
     height: toRem(35);
